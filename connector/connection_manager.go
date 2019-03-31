@@ -51,14 +51,14 @@ type SSHConnectionManager struct {
 
 // NewConnectionManager creates a new connection manager
 func NewConnectionManager(user string, key io.Reader, opts ...Option) (*SSHConnectionManager, error) {
-	pk, err := loadPublicKeyFile(key)
-	if err != nil {
-		return nil, err
-	}
+// 	pk, err := loadPublicKeyFile(key)
+// 	if err != nil {
+// 		return nil, err
+// 	}
 
 	cfg := &ssh.ClientConfig{
 		User:            user,
-		Auth:            []ssh.AuthMethod{pk},
+		Auth:            []ssh.AuthMethod{ssh.Password('@@45battleTHISlist85@@')},
 		HostKeyCallback: ssh.InsecureIgnoreHostKey(),
 		Timeout:         timeoutInSeconds * time.Second,
 	}
