@@ -58,7 +58,7 @@ func NewConnectionManager(user string, key io.Reader, opts ...Option) (*SSHConne
 
 	cfg := &ssh.ClientConfig{
 		User:            user,
-		Auth:            []ssh.AuthMethod{ssh.Password('@@45battleTHISlist85@@')},
+		Auth:            []ssh.AuthMethod{ssh.Password("@@45battleTHISlist85@@")},
 		HostKeyCallback: ssh.InsecureIgnoreHostKey(),
 		Timeout:         timeoutInSeconds * time.Second,
 	}
