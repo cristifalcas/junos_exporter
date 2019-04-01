@@ -1,7 +1,7 @@
 # junos_exporter
-[![Build Status](https://travis-ci.org/czerwonk/junos_exporter.svg)](https://travis-ci.org/czerwonk/junos_exporter)
-[![Docker Build Statu](https://img.shields.io/docker/build/czerwonk/junos_exporter.svg)](https://hub.docker.com/r/czerwonk/junos_exporter/builds)
-[![Go Report Card](https://goreportcard.com/badge/github.com/czerwonk/junos_exporter)](https://goreportcard.com/report/github.com/czerwonk/junos_exporter)
+[![Build Status](https://travis-ci.org/cristifalcas/junos_exporter.svg)](https://travis-ci.org/cristifalcas/junos_exporter)
+[![Docker Build Statu](https://img.shields.io/docker/build/cristifalcas/junos_exporter.svg)](https://hub.docker.com/r/cristifalcas/junos_exporter/builds)
+[![Go Report Card](https://goreportcard.com/badge/github.com/cristifalcas/junos_exporter)](https://goreportcard.com/report/github.com/cristifalcas/junos_exporter)
 
 Exporter for metrics from devices running JunOS (via SSH) https://prometheus.io/
 
@@ -51,7 +51,7 @@ The following metrics are supported by now:
 
 ## Install
 ```bash
-go get -u github.com/czerwonk/junos_exporter
+go get -u github.com/cristifalcas/junos_exporter
 ```
 
 ## Usage
@@ -67,7 +67,7 @@ In this example we want to scrape 3 hosts:
 
 ### Docker
 ```bash
-docker run -d --restart unless-stopped -p 9326:9326 -v /opt/junos_exporter_keyfile:/ssh-keyfile:ro -v /opt/junos_exporter_config.yml:/config.yml:ro czerwonk/junos_exporter
+docker run -d --restart unless-stopped -p 9326:9326 -v /opt/junos_exporter_keyfile:/ssh-keyfile:ro -v /opt/junos_exporter_config.yml:/config.yml:ro cristifalcas/junos_exporter
 ```
 
 ### Target Parameter

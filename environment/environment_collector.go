@@ -3,8 +3,8 @@ package environment
 import (
 	"strings"
 
-	"github.com/czerwonk/junos_exporter/collector"
-	"github.com/czerwonk/junos_exporter/rpc"
+	"github.com/cristifalcas/junos_exporter/collector"
+	"github.com/cristifalcas/junos_exporter/rpc"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

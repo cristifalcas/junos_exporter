@@ -3,9 +3,9 @@ package interfacediagnostics
 import (
 	"strconv"
 
-	"github.com/czerwonk/junos_exporter/rpc"
+	"github.com/cristifalcas/junos_exporter/rpc"
 
-	"github.com/czerwonk/junos_exporter/collector"
+	"github.com/cristifalcas/junos_exporter/collector"
 	"github.com/prometheus/client_golang/prometheus"
 )
 
